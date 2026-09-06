@@ -1,0 +1,14 @@
+# Secrets and local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local files
+node_modules/
+dist/
+.next/
+.DS_Store
