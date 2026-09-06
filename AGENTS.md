@@ -1,22 +1,14 @@
-# Cloud task rules
+# AI 作業ルール
 
-## Definition of done
+## 守ること
 
-For every requested change:
+- 変更は依頼の範囲だけに留める。既存実装を読んでから変更する。
+- APIキー、トークン、パスワード、`.env`、個人情報を作成・表示・コミットしない。
+- 外部サービスの課金、公開、削除、権限変更は、実行前に内容を報告して確認を待つ。
 
-1. Keep the change scoped to the request.
-2. Run `npm run lint` and `npm test`.
-3. Report the changed files, test result, and any remaining risk.
-4. Never commit secrets, API keys, or `.env` files.
+## 完了条件
 
-## Mobile-friendly review
-
-Make changes through a pull request whenever possible. In the pull request,
-write a short Japanese summary with:
-
-- what changed;
-- how it was checked;
-- the preview URL, if available;
-- a short checklist for phone review.
-
-Keep one task to one pull request unless the user explicitly asks otherwise.
+1. `npm run lint` と `npm test` を実行する。
+2. 変更ファイル、テスト結果、残るリスクを日本語で短く報告する。
+3. 可能なら1依頼につき1つのPull Requestを作る。
+4. PR本文には、変更概要・テスト結果・スマホ確認項目・プレビューURLを記載する。
