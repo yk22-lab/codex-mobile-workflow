@@ -45,6 +45,9 @@ test("keeps the root route bound to the standalone latest LP", async () => {
   assert.match(staticPage, /おしゃぶりとの組み合わせが特に効いた/);
   assert.match(staticPage, /購入前に最後まで比べた3台/);
   assert.match(staticPage, /リクライニングとステップが連動する/);
+  assert.match(staticPage, /使ってみて分かった、移動のこと/);
+  assert.match(staticPage, /今の価格と在庫を確認してから/);
+  assert.match(staticPage, /今回の比較で、わが家の本命/);
   assert.match(staticPage, /assets\/soothe-flat\.png/);
   assert.doesNotMatch(page, /SkeletonPreview|codex-preview/);
   assert.doesNotMatch(layout, /Starter Project|codex-preview|_sites-preview/);
