@@ -41,6 +41,8 @@ test("keeps the root route bound to the standalone latest LP", async () => {
   assert.match(layout, /title:\s*"ベビーチェア選びテスト"/);
   assert.match(staticPage, /ハイローチェア、<em>電動か手動かだけで選んでない？<\/em>/);
   assert.match(staticPage, /コンビ ネムリラ CR/);
+  assert.match(staticPage, /使い始めて2週間の実感/);
+  assert.match(staticPage, /おしゃぶりとの組み合わせが特に効いた/);
   assert.match(staticPage, /assets\/soothe-flat\.png/);
   assert.doesNotMatch(page, /SkeletonPreview|codex-preview/);
   assert.doesNotMatch(layout, /Starter Project|codex-preview|_sites-preview/);
