@@ -23,33 +23,25 @@ async function render() {
   );
 }
 
-test("server-renders the baby chair choice test", async () => {
+test("redirects the root page to the latest published LP", async () => {
   const response = await render();
-  assert.equal(response.status, 200);
-  assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
-
-  const html = await response.text();
-  assert.match(html, /<title>ベビーチェア選びテスト<\/title>/);
-  assert.match(html, /BABY CHAIR · CHOICE TEST/);
-  assert.match(html, /わが家に合う/);
-  assert.match(html, /今いちばん避けたいのは？/);
-  assert.match(html, /部屋を広く使いたい/);
-  assert.match(html, /掃除をラクにしたい/);
-  assert.match(html, /長く使いたい/);
-  assert.match(html, /条件をひとつ選ぶと、見るべきポイントが出ます/);
+  assert.equal(response.status, 307);
+  assert.equal(response.headers.get("location"), "/baby-chair-choice-test.html");
 });
 
-test("keeps the published page free from starter preview code", async () => {
-  const [page, layout, packageJson] = await Promise.all([
+test("keeps the root route bound to the standalone latest LP", async () => {
+  const [page, layout, packageJson, staticPage] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
     readFile(new URL("../package.json", import.meta.url), "utf8"),
+    readFile(new URL("../public/baby-chair-choice-test.html", import.meta.url), "utf8"),
   ]);
 
-  assert.match(page, /const choices/);
-  assert.match(page, /const results/);
-  assert.match(page, /aria-live="polite"/);
+  assert.match(page, /redirect\("\/baby-chair-choice-test\.html"\)/);
   assert.match(layout, /title:\s*"ベビーチェア選びテスト"/);
+  assert.match(staticPage, /ハイローチェア、<em>電動か手動かだけで選んでない？<\/em>/);
+  assert.match(staticPage, /コンビ ネムリラ CR/);
+  assert.match(staticPage, /assets\/soothe-flat\.png/);
   assert.doesNotMatch(page, /SkeletonPreview|codex-preview/);
   assert.doesNotMatch(layout, /Starter Project|codex-preview|_sites-preview/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);

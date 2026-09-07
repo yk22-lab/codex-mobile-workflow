@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ハイローチェアを選ぶ前のメモ</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;background:#f2f3f1;color:#16262c;font-family:"Hiragino Sans","Yu Gothic",Arial,sans-serif;line-height:1.75}
+    main{max-width:1040px;margin:36px auto;background:#fff}
+    .pad{padding-left:8%;padding-right:8%}
+    .meta{display:flex;justify-content:space-between;padding-top:24px;color:#69767a;font-size:11px;letter-spacing:.1em}
+    .hero{padding-top:72px;padding-bottom:70px;border-bottom:1px solid #c9d0cf}
+    .eyebrow{color:#377581;font-size:11px;font-weight:700;letter-spacing:.14em;margin:0 0 18px}
+    .hero h1{font-size:clamp(38px,5.2vw,64px);line-height:1.22;letter-spacing:-.065em;margin:0;max-width:780px}
+    .hero h1 em{font-style:normal;color:#c7664c}
+    .hero .lead{max-width:600px;color:#59666a;margin:27px 0 0}
+    .affiliate-disclosure{max-width:640px;margin:22px 0 0;padding:11px 13px;border-left:2px solid #8ebbc0;background:#f1f7f6;color:#526165;font-size:11px;line-height:1.65}
+    .personal-note{max-width:640px;margin:12px 0 0;color:#687579;font-size:12px}
+    .action{display:inline-block;margin-top:31px;color:#16262c;text-decoration:none;font-weight:700;border-bottom:2px solid #c7664c;padding-bottom:5px}
+    .section{padding-top:70px;padding-bottom:70px}
+    .section h2{font-size:30px;letter-spacing:-.05em;line-height:1.35;margin:0 0 10px}
+    .sub{color:#657175;margin:0;max-width:650px}
+    .choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:33px}
+    .choice{position:relative;display:flex;flex-direction:column;align-items:stretch;gap:0;width:100%;padding:0 0 21px;border:1px solid #c9d0cf;background:#fff;color:#16262c;text-align:left;cursor:pointer;overflow:hidden;transition:border-color .18s,background .18s}
+    .choice:hover,.choice.active{background:#f1f7f6;border-color:#8ebbc0}
+    .choice .scene{display:block;width:100%;background:#fff}
+    .choice .scene img{display:block;width:100%;height:auto}
+    .choice .copy{padding:17px 18px 0}
+    .choice .heading{display:flex;align-items:center;gap:9px}
+    .choice .no{color:#c7664c;font-family:inherit;font-size:17px;font-weight:700;letter-spacing:-.03em;line-height:1}
+    .choice strong{display:block;font-size:17px;line-height:1.48;letter-spacing:-.02em}
+    .choice small{display:block;color:#6a7578;font-size:12px;line-height:1.65;margin-top:7px}
+    .choice .arrow{display:block;margin:16px 18px 0;color:#377581;font-size:12px;font-weight:700;line-height:1.45}
+    .choice small b{display:block;color:#16262c;font-size:12px;margin-bottom:5px}
+    .result{background:#14262c;color:#fff;padding-top:50px;padding-bottom:52px}
+    .result.empty{color:#bac6c6;text-align:center;font-size:14px}
+    .result .eyebrow{color:#86c2c8}
+    .result-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,34%);gap:42px;align-items:center}
+    .result h2{font-size:28px;line-height:1.4;letter-spacing:-.045em;margin:0 0 13px}
+    .result p{color:#d4dcdc;max-width:620px;margin:0}
+    .result-visual{margin:0;background:#fff}
+    .result-visual img{display:block;width:100%;height:auto}
+    .chips{list-style:none;padding:0;margin:24px 0 0;display:flex;gap:8px;flex-wrap:wrap}
+    .chips li{padding:7px 10px;background:#263c42;color:#eaf0ee;font-size:13px}
+    .chips li:before{content:"□ ";color:#ef9a79}
+    .candidates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:24px}
+    .candidate{display:flex;flex-direction:column;gap:5px;padding:15px;background:#fff;border:2px solid #86c2c8;color:#16262c;text-decoration:none;transition:background .18s,border-color .18s}
+    .candidate:hover{background:#e8f0ef;border-color:#c7664c}.candidate b{font-size:14px}.candidate span{font-size:11px;line-height:1.55;color:#58666a}.candidate i{display:inline-block;align-self:flex-start;margin-top:5px;padding:6px 9px;background:#377581;color:#fff;font-size:12px;font-style:normal;font-weight:700}
+    .reset{margin-top:26px;padding:0 0 4px;border:0;border-bottom:1px solid #b3cccf;background:none;color:#d9eded;cursor:pointer}
+    .detail{background:#f7f8f7}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#c9d0cf;margin-top:35px;border:1px solid #c9d0cf}
+    .card{background:#fff;padding:26px 25px}
+    .card .num{display:inline-block;color:#c7664c;font-family:inherit;font-size:17px;font-weight:700;letter-spacing:-.03em;vertical-align:baseline}
+    .card h3{display:inline;margin:0 0 0 9px;font-size:18px;letter-spacing:-.025em;line-height:1.4}
+    .card p{font-size:13px;color:#5d686b;margin:0}
+    .opinion{margin-top:16px;border-left:2px solid #8ebbc0;padding-left:10px;color:#45646a;font-size:12px;line-height:1.7}
+    .opinion:before{content:"私のメモ";display:block;margin-bottom:3px;color:#377581;font-size:10px;font-weight:700;letter-spacing:.09em}
+    .safety{border-left:4px solid #c7664c;padding:2px 0 2px 19px;max-width:760px}
+    .safety h2{font-size:22px}.safety p{color:#526165;margin-bottom:0}.safety a{color:#256673}
+    .future{background:#e8f0ef}.future h2{max-width:620px}
+    .timeline{display:grid;grid-template-columns:95px 1fr;gap:20px;margin-top:24px;padding-top:22px;border-top:1px solid #adc4c4}
+    .timeline b{color:#377581;font-size:12px;letter-spacing:.07em}.timeline p{margin:0;color:#526165}
+    .champion{border-top:1px solid #c9d0cf;background:#f7f8f7}
+    .champion-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,36%);gap:44px;align-items:center;margin-top:30px}
+    .champion-copy h2{font-size:clamp(29px,3.4vw,42px);max-width:500px}.champion-copy .lead-review{color:#526165;margin:18px 0 0;max-width:520px}
+    .review-points{list-style:none;padding:0;margin:24px 0 0}.review-points li{padding:10px 0;border-top:1px solid #c9d0cf;font-size:13px}.review-points li:last-child{border-bottom:1px solid #c9d0cf}.review-points b{color:#377581;margin-right:10px}
+    .product-facts{display:flex;flex-wrap:wrap;gap:7px;margin:19px 0 0}.product-facts span{padding:5px 8px;background:#fff;color:#526165;font-size:11px}
+    .review-cta{display:inline-block;margin-top:27px;padding:14px 18px;background:#16262c;color:#fff;text-decoration:none;font-size:14px;font-weight:700}.review-cta span{display:block;margin-top:2px;color:#b8d2d2;font-size:11px;font-weight:400}
+    .review-photo{position:relative;min-height:390px;background:#d8e8e5;overflow:hidden}.review-photo:before,.review-photo:after{content:"";position:absolute}.review-photo:before{inset:35px 30px;background:linear-gradient(145deg,#e98a67 0 36%,#195c68 36% 66%,#d6e8e8 66%);opacity:.82}.review-photo:after{left:22px;bottom:20px;padding:7px 9px;background:#fff;color:#377581;content:"実写レビュー写真を掲載";font-size:11px;font-weight:700;letter-spacing:.04em}
+    .footer{padding:25px 8%;font-size:11px;color:#768184}
+    @media(max-width:720px){
+      main{margin:0}.pad{padding-left:27px;padding-right:27px}.hero{padding-top:55px}
+      .choices{grid-template-columns:1fr;gap:10px}.choice{display:flex;padding:0;min-height:0}
+      .choice .scene{width:100%}.choice .scene img{width:160px;margin:0 auto}.choice .copy{padding:18px 18px 4px}.choice .no{font-size:16px}.choice strong{font-size:16px}.choice small{font-size:11px}.choice .arrow{margin:5px 18px 17px}
+      .result-layout{grid-template-columns:1fr;gap:25px}.result-visual{max-width:360px;margin-left:auto;margin-right:auto}
+      .candidates{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .champion-grid{grid-template-columns:1fr;gap:25px}.review-photo{min-height:320px}
+      .timeline{grid-template-columns:1fr;gap:5px}.result h2{font-size:24px}
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="pad">
+      <div class="meta"><span>育児の道具メモ</span><span>最終更新：2026年8月</span></div>
+      <div class="hero">
+        <p class="eyebrow">わが家のハイローチェア選びメモ</p>
+        <h1>ハイローチェア、<em>電動か手動かだけで選んでない？</em></h1>
+        <p class="lead">自分も最初は「電動にするか、手動にするか」ばかり見ていました。でも調べていくと、毎日使うならむしろ気になったのが、<strong>動かしやすさ、洗いやすさ、そして離乳食が始まった後も使いやすいか。</strong> 数か月だけの寝かしつけ用品としてではなく、家で実際に使い続けることを考えて比較したポイントをまとめます。</p>
+        <p class="affiliate-disclosure">このページにはAmazonアソシエイトおよびYahoo!ショッピングアフィリエイトのリンクが含まれます。Amazonのアソシエイトとして、育児の道具メモは適格販売により収入を得ています。</p>
+        <p class="personal-note">※ まだ使い始めたばかりなので、離乳食が始まってから気づいたことも、その都度ここに追記します。</p>
+        <a class="action" href="#choice">まず、一番ラクにしたいことから見る ↓</a>
+      </div>
+    </header>
+
+    <section class="section pad" id="choice">
+      <p class="eyebrow">まず、いちばん気になることから</p>
+      <h2>いま、一番ラクにしたいのはどれ？</h2>
+      <p class="sub">ハイローチェアは、全部の性能を追いかけると迷います。<strong>まず「これだけはラクにしたい」を1つ決めると選びやすいです。</strong></p>
+      <div class="choices">
+        <button class="choice" data-k="electric">
+          <span class="scene"><img src="assets/soothe-flat.png" alt="リクライニングしたベビースイングで赤ちゃんをあやすイメージ"></span>
+          <span class="copy"><span class="heading"><span class="no">1</span><strong>寝かしつけ・あやしをラクにしたい</strong></span><small><b>「電動なら本当にラクになる？」が一番気になる人へ</b>揺れ方だけでなく、音・電源・手動でも使いやすいかまで見ます。</small></span><span class="arrow">寝かしつけ重視ならここを見る →</span>
+        </button>
+        <button class="choice" data-k="clean">
+          <span class="scene"><img src="assets/clean-flat.png" alt="トレーとシートを拭いて片付けるイメージ"></span>
+          <span class="copy"><span class="heading"><span class="no">2</span><strong>離乳食後の片付けをラクにしたい</strong></span><small><b>毎日汚れるものだから、洗いやすさを優先したい人へ</b>シートだけでなく、ベルト・テーブル・隙間まで。「拭けばOK」だけでは分からない部分を見ます。</small></span><span class="arrow">洗いやすさ重視ならここを見る →</span>
+        </button>
+        <button class="choice" data-k="space">
+          <span class="scene"><img src="assets/space-flat.png" alt="折りたたんだチェアをダイニング脇に置くイメージ"></span>
+          <span class="copy"><span class="heading"><span class="no">3</span><strong>邪魔にならず、できるだけ長く使いたい</strong></span><small><b>「買ったけど大きくて邪魔」は避けたい人へ</b>重量だけでなく、キャスター・方向転換・折りたたみ・食事チェアとしての使い方まで確認します。</small></span><span class="arrow">邪魔にしたくないならここを見る →</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="result pad empty" id="result">上の項目をひとつ選ぶと、商品ページで先に見るポイントが出ます。</section>
+
+    <section class="section pad detail">
+      <p class="eyebrow">比べている途中で、気になったこと</p><h2>買ったあとに「ここ見ればよかった」を減らす6項目。</h2><p class="sub">商品ページでは似て見えても、実際に毎日使うと差が出そうなところを、先に確認しました。</p>
+      <div class="grid">
+        <article class="card"><span class="num">01</span><h3>電動って、本当に必要？</h3><p>揺れの有無だけでなく、電源の場所・音・手動時の扱いやすさまで確認。</p><div class="opinion">自分は「電動かどうか」より、電動を使わないときも扱いやすいかを重視しました。</div></article>
+        <article class="card"><span class="num">02</span><h3>家のテーブルと高さは合う？</h3><p>ダイニングテーブルに合うか、床で使うときに低すぎないかを寸法で見る。</p><div class="opinion">スペック表の高さより、いつものダイニングにちゃんと合うかの方が大事でした。</div></article>
+        <article class="card"><span class="num">03</span><h3>食べこぼしたら、どこまで洗える？</h3><p>シート、ベルト、テーブル周りをどこまで外せるか。説明書と写真を両方確認。</p><div class="opinion">赤ちゃん用品は汚れる前提なので、「拭ける」より「外して洗える」を見ました。</div></article>
+        <article class="card"><span class="num">04</span><h3>毎日動かすには重くない？</h3><p>重さだけでなく、キャスター、折りたたんだ厚み、片手で扱えるかを確認。</p><div class="opinion">数kgの差より、「その場で方向転換しやすいか」の方が毎日は効きそうだと感じました。</div></article>
+        <article class="card"><span class="num">05</span><h3>離乳食が始まっても使いやすい？</h3><p>対象年齢・耐荷重に加え、食事用に切り替えた後の座りやすさを見る。</p><div class="opinion">「長く使える」より、次の一年で何に使うかで考えたい。</div></article>
+        <article class="card"><span class="num">06</span><h3>汚れ対策にカバーは使える？</h3><p>食事期に備えて買い足すなら、ずれ・洗濯・本体操作への影響を実使用で追記する。</p><div class="opinion">メーカー推奨ではないので、使うなら自分の環境での感想として残す。</div></article>
+      </div>
+    </section>
+
+    <section class="section pad"><div class="safety"><p class="eyebrow" style="margin:0 0 8px">安全について</p><h2>安全に関する項目は、必ず公式情報で確認してください。</h2><p>対象年齢・使用方法・ベルト・安定性・SGマーク・リコール情報は、メーカーの説明書と公的情報で確認してください。消費者庁もハイチェアからの転落事故に注意を呼びかけています。 <a href="https://www.caa.go.jp/policies/policy/consumer_safety/child/project_001/mail/20200917/">消費者庁の注意喚起を見る</a></p></div></section>
+    <section class="section pad champion"><p class="eyebrow">わが家が最後に選んだ一台</p><div class="champion-grid"><div class="champion-copy"><h2>最後に選んだのは、<br>コンビ ネムリラ CRでした。</h2><p class="lead-review">最初は電動モデルも含めて見ていましたが、最終的には<strong>家の中で扱いやすいこと</strong>と<strong>離乳食が始まった後も使いやすそうなこと</strong>を優先しました。選んだのは、手動タイプのネムリラ CRです。</p><div class="product-facts"><span>手動スウィング</span><span>重量 8.8kg</span><span>5段階＋収納ポジション</span><span>新生児〜4才頃</span></div><p class="lead-review">最後まで迷ったモデルもありましたが、決め手になったのはスペック表では目立ちにくい違いでした。</p><ul class="review-points"><li><b>決め手 1</b>8.8kg。部屋の中で動かすことを考えたとき、重すぎないと感じました。</li><li><b>決め手 2</b>高さを5段階＋収納ポジションに調整できること。使う場所に合わせやすそうでした。</li><li><b>決め手 3</b>リバーシブルのシートクッションを丸ごと洗えること。離乳食が始まった後まで考えると安心でした。</li></ul><p class="lead-review">使い始めたばかりなので、揺れ方や洗濯のしやすさは実感が増えたら追記します。サイズ・現在の価格・在庫は、購入前に確認してください。</p><a class="review-cta" href="https://store.shopping.yahoo.co.jp/toysrus-babierus/10058581.html" target="_blank" rel="noreferrer">Yahoo!ショッピングでネムリラ CRを見る →<span>サイズ・現在の価格・在庫を確認できます</span></a></div><figure class="review-photo" aria-label="ネムリラ CRの実写レビュー写真を掲載する場所"></figure></div></section>
+    <section class="section pad future"><p class="eyebrow" style="margin-top:0">使い始めてからのメモ</p><h2>このページは、使いながら更新します。</h2><p class="sub">現在は、寝かしつけ・高さ・収納について記録中です。離乳食が始まったら、<strong>汚れ方・洗濯頻度・食事チェアとしての使いやすさ</strong>も追記します。非公式カバーも実際に購入したら、ずれ・洗いやすさ・操作への影響を追記予定です。</p></section>
+    <footer class="footer">掲載する製品情報・価格・安全情報は、各メーカーの公式情報と説明書を確認したうえで更新します。</footer>
+  </main>
+
+  <script>
+    const guide={
+      electric:{title:'電動機能より先に、手動でも扱いやすいか。',body:'電源を使う場所、音、揺れを止めた後の使い方まで確認すると、電動機能だけで決めずに済みます。',checks:['電源・コードの位置','手動時の操作','揺れを使う期間'],image:'assets/soothe-flat.png',alt:'リクライニングしたベビースイングで赤ちゃんをあやすイメージ',picks:[{name:'電動・手動の使い方を比べる',note:'電源の位置、運転音、手動の操作感を見る',url:'https://www.amazon.co.jp/'},{name:'リクライニングの角度を比べる',note:'あやす時期と、寝かせた後の使い方を見る',url:'https://www.amazon.co.jp/'}]},
+      clean:{title:'洗えるかより、汚れが入り込むか。',body:'食事期を見越すなら、外せるパーツとベルト周りの構造を先に確認しておくと、毎日の負担を想像しやすいです。',checks:['シートの取り外し','ベルトの洗い方','テーブル周りの隙間'],image:'assets/clean-flat.png',alt:'トレーとシートを拭いて片付けるイメージ',picks:[{name:'洗いやすさを比べる',note:'トレー・シート・ベルトの外しやすさを見る',url:'https://www.amazon.co.jp/'},{name:'食事チェアとして比べる',note:'汚れが入り込む隙間とテーブル周りを見る',url:'https://www.amazon.co.jp/'}]},
+      space:{title:'最大高さより、家での置き場所を測る。',body:'ダイニングの高さ、通路、畳んだ厚みまで見ると、生活の中で使い続けられる候補に絞れます。',checks:['最大・最小の高さ','本体の幅と奥行き','折りたたみ時の厚み'],image:'assets/space-flat.png',alt:'折りたたんだチェアをダイニング脇に置くイメージ',picks:[{name:'畳んだときの大きさを比べる',note:'収納時の幅とキャスターの扱いやすさを見る',url:'https://www.amazon.co.jp/'},{name:'長く使える条件を比べる',note:'高さ調整と対象年齢を確認する',url:'https://www.amazon.co.jp/'}]}
+    };
+    const output=document.querySelector('#result');
+    document.querySelectorAll('.choice').forEach(button=>{
+      button.addEventListener('click',()=>{
+        document.querySelectorAll('.choice').forEach(item=>item.classList.remove('active'));
+        button.classList.add('active');
+        const item=guide[button.dataset.k];
+        output.className='result pad';
+        output.innerHTML=`<div class="result-layout"><div><p class="eyebrow">まず確認すること</p><h2>${item.title}</h2><p>${item.body}</p><ul class="chips">${item.checks.map(check=>`<li>${check}</li>`).join('')}</ul><div class="candidates">${item.picks.map(pick=>`<a class="candidate" href="${pick.url}" target="_blank" rel="noreferrer"><b>${pick.name}</b><span>${pick.note}</span><i>商品ページを見る →</i></a>`).join('')}</div><button class="reset">ほかの使い方で見直す</button></div><figure class="result-visual"><img src="${item.image}" alt="${item.alt}"></figure></div>`;
+        output.querySelector('.reset').addEventListener('click',()=>{
+          output.className='result pad empty';
+          output.textContent='上の項目をひとつ選ぶと、商品ページで先に見るポイントが出ます。';
+          document.querySelector('#choice').scrollIntoView({behavior:'smooth'});
+        });
+        output.scrollIntoView({behavior:'smooth',block:'center'});
+      });
+    });
+  </script>
+</body>
+</html>
