@@ -46,7 +46,8 @@ test("keeps the root route bound to the standalone latest LP", async () => {
   assert.match(staticPage, /購入前に最後まで比べた3台/);
   assert.match(staticPage, /リクライニングとステップが連動する/);
   assert.match(staticPage, /使ってみて分かった、移動のこと/);
-  assert.match(staticPage, /今の価格と在庫を確認してから/);
+  assert.match(staticPage, /価格とポイント還元を確認してから/);
+  assert.match(staticPage, /Amazonのらくベビーを使って購入できたら/);
   assert.match(staticPage, /今回の比較で、わが家の本命/);
   assert.match(staticPage, /2週間経った今、使わない日はありません/);
   assert.match(staticPage, /家事用から、寝かしつけの主力へ/);
