@@ -44,6 +44,9 @@ test("keeps the root route bound to the standalone latest LP", async () => {
   assert.match(staticPage, /使い始めて2週間の実感/);
   assert.match(staticPage, /おしゃぶりと合わせると、うちの子はほぼ毎回静かになり/);
   assert.match(staticPage, /購入前に最後まで比べた3台/);
+  assert.match(staticPage, /compare-table/);
+  assert.match(staticPage, /楽天市場で見る/);
+  assert.match(staticPage, /data-product="nemulila-fit-aq"/);
   assert.match(staticPage, /リクライニングとステップが連動する/);
   assert.match(staticPage, /使ってみて分かった、移動のこと/);
   assert.match(staticPage, /価格とポイント還元を確認してから/);
@@ -51,7 +54,7 @@ test("keeps the root route bound to the standalone latest LP", async () => {
   assert.match(staticPage, /今回の比較で、わが家の本命/);
   assert.match(staticPage, /2週間経った今、使わない日はありません/);
   assert.match(staticPage, /家事用から、寝かしつけの主力へ/);
-  assert.match(staticPage, /公式の商品情報を見る/);
+  assert.match(staticPage, /商品詳細を見る/);
   assert.match(staticPage, /assets\/soothe-flat\.png/);
   assert.doesNotMatch(page, /SkeletonPreview|codex-preview/);
   assert.doesNotMatch(layout, /Starter Project|codex-preview|_sites-preview/);
