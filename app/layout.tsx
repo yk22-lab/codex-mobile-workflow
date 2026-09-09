@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ベビーチェア選びテスト",
-  description: "暮らしの条件からベビーチェア選びの優先順位を見つけるテストページ。",
+  title: "ネムリラ CR・Fit AQ・ユラリズム比較｜実使用レビュー",
+  description:
+    "ネムリラ CRを実際に購入・使用した体験から、Fit AQ・ユラリズムとの違いと失敗しにくい選び方を紹介します。",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

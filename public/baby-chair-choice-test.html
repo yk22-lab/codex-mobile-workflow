@@ -3,182 +3,96 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ハイローチェアを選ぶ前のメモ</title>
+  <meta name="description" content="ネムリラ CR・Fit AQ・ユラリズムを比較。実際にCRを購入し2週間使った体験から、静かな手動スイング、重さ、キャスター、クッションの違いを解説します。">
+  <meta property="og:title" content="手動ハイローチェア3台を比較｜ネムリラ CR使用レビュー">
+  <meta property="og:description" content="スペックと実体験を分けて、失敗しにくい選び方をまとめました。">
+  <meta property="og:image" content="https://baby-chair-choice-test.yosee221.chatgpt.site/og.png">
+  <title>ネムリラ CR・Fit AQ・ユラリズム比較｜実使用レビュー</title>
   <style>
-    *{box-sizing:border-box}
-    body{margin:0;background:#f2f3f1;color:#16262c;font-family:"Hiragino Sans","Yu Gothic",Arial,sans-serif;line-height:1.75}
-    main{max-width:1040px;margin:36px auto;background:#fff}
-    .pad{padding-left:8%;padding-right:8%}
-    .meta{display:flex;justify-content:space-between;padding-top:24px;color:#69767a;font-size:11px;letter-spacing:.1em}
-    .hero{padding-top:72px;padding-bottom:70px;border-bottom:1px solid #c9d0cf}
-    .eyebrow{color:#377581;font-size:11px;font-weight:700;letter-spacing:.14em;margin:0 0 18px}
-    .hero h1{font-size:clamp(38px,5.2vw,64px);line-height:1.22;letter-spacing:-.065em;margin:0;max-width:780px}
-    .hero h1 em{font-style:normal;color:#c7664c}
-    .hero .lead{max-width:600px;color:#59666a;margin:27px 0 0}
-    .affiliate-disclosure{max-width:640px;margin:22px 0 0;padding:11px 13px;border-left:2px solid #8ebbc0;background:#f1f7f6;color:#526165;font-size:11px;line-height:1.65}
-    .personal-note{max-width:640px;margin:12px 0 0;color:#687579;font-size:12px}
-    .action{display:inline-block;margin-top:31px;color:#16262c;text-decoration:none;font-weight:700;border-bottom:2px solid #c7664c;padding-bottom:5px}
-    .section{padding-top:70px;padding-bottom:70px}
-    .section h2{font-size:30px;letter-spacing:-.05em;line-height:1.35;margin:0 0 10px}
-    .sub{color:#657175;margin:0;max-width:650px}
-    .choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:33px}
-    .choice{position:relative;display:flex;flex-direction:column;align-items:stretch;gap:0;width:100%;padding:0 0 21px;border:1px solid #c9d0cf;background:#fff;color:#16262c;text-align:left;cursor:pointer;overflow:hidden;transition:border-color .18s,background .18s}
-    .choice:hover,.choice.active{background:#f1f7f6;border-color:#8ebbc0}
-    .choice .scene{display:block;width:100%;background:#fff}
-    .choice .scene img{display:block;width:100%;height:auto}
-    .choice .copy{padding:17px 18px 0}
-    .choice .heading{display:flex;align-items:center;gap:9px}
-    .choice .no{color:#c7664c;font-family:inherit;font-size:17px;font-weight:700;letter-spacing:-.03em;line-height:1}
-    .choice strong{display:block;font-size:17px;line-height:1.48;letter-spacing:-.02em}
-    .choice small{display:block;color:#6a7578;font-size:12px;line-height:1.65;margin-top:7px}
-    .choice .arrow{display:block;margin:16px 18px 0;color:#377581;font-size:12px;font-weight:700;line-height:1.45}
-    .choice small b{display:block;color:#16262c;font-size:12px;margin-bottom:5px}
-    .result{background:#14262c;color:#fff;padding-top:50px;padding-bottom:52px}
-    .result.empty{color:#bac6c6;text-align:center;font-size:14px}
-    .result .eyebrow{color:#86c2c8}
-    .result-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,34%);gap:42px;align-items:center}
-    .result h2{font-size:28px;line-height:1.4;letter-spacing:-.045em;margin:0 0 13px}
-    .result p{color:#d4dcdc;max-width:620px;margin:0}
-    .result-visual{margin:0;background:#fff}
-    .result-visual img{display:block;width:100%;height:auto}
-    .chips{list-style:none;padding:0;margin:24px 0 0;display:flex;gap:8px;flex-wrap:wrap}
-    .chips li{padding:7px 10px;background:#263c42;color:#eaf0ee;font-size:13px}
-    .chips li:before{content:"□ ";color:#ef9a79}
-    .candidates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:24px}
-    .candidate{display:flex;flex-direction:column;gap:5px;padding:15px;background:#fff;border:2px solid #86c2c8;color:#16262c;text-decoration:none;transition:background .18s,border-color .18s}
-    .candidate:hover{background:#e8f0ef;border-color:#c7664c}.candidate b{font-size:14px}.candidate span{font-size:11px;line-height:1.55;color:#58666a}.candidate i{display:inline-block;align-self:flex-start;margin-top:5px;padding:6px 9px;background:#377581;color:#fff;font-size:12px;font-style:normal;font-weight:700}
-    .reset{margin-top:26px;padding:0 0 4px;border:0;border-bottom:1px solid #b3cccf;background:none;color:#d9eded;cursor:pointer}
-    .detail{background:#f7f8f7}
-    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#c9d0cf;margin-top:35px;border:1px solid #c9d0cf}
-    .card{background:#fff;padding:26px 25px}
-    .card .num{display:inline-block;color:#c7664c;font-family:inherit;font-size:17px;font-weight:700;letter-spacing:-.03em;vertical-align:baseline}
-    .card h3{display:inline;margin:0 0 0 9px;font-size:18px;letter-spacing:-.025em;line-height:1.4}
-    .card p{font-size:13px;color:#5d686b;margin:0}
-    .opinion{margin-top:16px;border-left:2px solid #8ebbc0;padding-left:10px;color:#45646a;font-size:12px;line-height:1.7}
-    .opinion:before{content:"私のメモ";display:block;margin-bottom:3px;color:#377581;font-size:10px;font-weight:700;letter-spacing:.09em}
-    .safety{border-left:4px solid #c7664c;padding:2px 0 2px 19px;max-width:760px}
-    .safety h2{font-size:22px}.safety p{color:#526165;margin-bottom:0}.safety a{color:#256673}
-    .future{background:#e8f0ef}.future h2{max-width:620px}
-    .timeline{display:grid;grid-template-columns:95px 1fr;gap:20px;margin-top:24px;padding-top:22px;border-top:1px solid #adc4c4}
-    .timeline b{color:#377581;font-size:12px;letter-spacing:.07em}.timeline p{margin:0;color:#526165}
-    .champion{border-top:1px solid #c9d0cf;background:#f7f8f7}
-    .champion-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,36%);gap:44px;align-items:center;margin-top:30px}
-    .champion-copy h2{font-size:clamp(29px,3.4vw,42px);max-width:500px}.champion-copy .lead-review{color:#526165;margin:18px 0 0;max-width:520px}
-    .review-points{list-style:none;padding:0;margin:24px 0 0}.review-points li{padding:10px 0;border-top:1px solid #c9d0cf;font-size:13px}.review-points li:last-child{border-bottom:1px solid #c9d0cf}.review-points b{color:#377581;margin-right:10px}
-    .product-facts{display:flex;flex-wrap:wrap;gap:7px;margin:19px 0 0}.product-facts span{padding:5px 8px;background:#fff;color:#526165;font-size:11px}
-    .review-cta{display:inline-block;margin-top:27px;padding:14px 18px;background:#16262c;color:#fff;text-decoration:none;font-size:14px;font-weight:700}.review-cta span{display:block;margin-top:2px;color:#b8d2d2;font-size:11px;font-weight:400}
-    .winner-mark{display:inline-flex;align-items:center;gap:8px;margin:0 0 14px;padding:7px 10px;background:#fff3d7;color:#7b5514;font-size:11px;font-weight:700;letter-spacing:.06em}.winner-mark .crown{font-size:22px;line-height:1}.winner-card{position:relative;border-top:3px solid #d69222}.winner-card .num{color:#b97812}.product-link{display:inline-block;margin-top:16px;color:#256673;font-size:12px;font-weight:700;text-decoration:none;border-bottom:1px solid currentColor}.purchase{background:#14262c;color:#fff;border-top:0}.purchase .eyebrow{color:#a8d4d6}.purchase h2{max-width:640px}.purchase .sub{color:#d4dcdc}.purchase .review-cta{background:#ef9a79;color:#16262c}.purchase .review-cta span{color:#4b3730;font-weight:400}.purchase .personal-note{color:#b8c6c7}
-    .reading-list{grid-template-columns:1fr;max-width:760px}.compare-scroll{margin-top:35px;overflow-x:auto;border:1px solid #c9d0cf;background:#fff;-webkit-overflow-scrolling:touch}.compare-table{width:100%;min-width:760px;border-collapse:collapse;font-size:13px}.compare-table th,.compare-table td{padding:18px 16px;border-right:1px solid #c9d0cf;border-bottom:1px solid #c9d0cf;vertical-align:top;text-align:left}.compare-table th{background:#f1f7f6;font-size:12px;color:#45646a}.compare-table th:first-child,.compare-table td:first-child{position:sticky;left:0;background:#f7f8f7;color:#526165;font-size:11px;font-weight:700;z-index:1;min-width:112px}.compare-table th:first-child{z-index:2}.compare-table tr:last-child td{border-bottom:0}.compare-table th:last-child,.compare-table td:last-child{border-right:0}.compare-table .is-winner{background:#fff8e8}.compare-table td.is-winner{background:#fffdf7}.compare-table strong{color:#16262c}.compare-table a{display:inline-block;margin-top:8px;color:#256673;font-size:11px;font-weight:700;text-decoration:none;border-bottom:1px solid currentColor}.scroll-note{margin:10px 0 0;color:#687579;font-size:11px}
-    .review-photo{position:relative;min-height:390px;background:#d8e8e5;overflow:hidden}.review-photo:before,.review-photo:after{content:"";position:absolute}.review-photo:before{inset:35px 30px;background:linear-gradient(145deg,#e98a67 0 36%,#195c68 36% 66%,#d6e8e8 66%);opacity:.82}.review-photo:after{left:22px;bottom:20px;padding:7px 9px;background:#fff;color:#377581;content:"実写レビュー写真を掲載";font-size:11px;font-weight:700;letter-spacing:.04em}
-    .footer{padding:25px 8%;font-size:11px;color:#768184}
-    @media(max-width:720px){
-      main{margin:0}.pad{padding-left:27px;padding-right:27px}.hero{padding-top:55px}
-      .choices{grid-template-columns:1fr;gap:10px}.choice{display:flex;padding:0;min-height:0}
-      .choice .scene{width:100%}.choice .scene img{width:160px;margin:0 auto}.choice .copy{padding:18px 18px 4px}.choice .no{font-size:16px}.choice strong{font-size:16px}.choice small{font-size:11px}.choice .arrow{margin:5px 18px 17px}
-      .result-layout{grid-template-columns:1fr;gap:25px}.result-visual{max-width:360px;margin-left:auto;margin-right:auto}
-      .candidates{grid-template-columns:1fr}
-      .grid{grid-template-columns:1fr}
-      .compare-scroll{margin-left:-27px;margin-right:-27px;border-left:0;border-right:0}.compare-table th,.compare-table td{padding:15px 13px}
-      .champion-grid{grid-template-columns:1fr;gap:25px}.review-photo{min-height:320px}
-      .timeline{grid-template-columns:1fr;gap:5px}.result h2{font-size:24px}
-    }
+    :root{--ink:#28312d;--muted:#68716d;--line:#ddd9d0;--ivory:#faf8f3;--beige:#eee6d8;--sage:#758b7e;--sage-dark:#52685c;--peach:#c8785d;--white:#fff;--radius:12px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font-family:"Hiragino Sans","Yu Gothic",system-ui,sans-serif;font-size:16px;line-height:1.72;-webkit-font-smoothing:antialiased}img{display:block;max-width:100%;height:auto}a{color:inherit}button,a{-webkit-tap-highlight-color:transparent}main{overflow:hidden}.wrap{width:min(100% - 40px,1040px);margin:auto}.section{padding:64px 0}.section-soft{background:#f3efe7}.section-white{background:var(--white)}.eyebrow{margin:0 0 10px;color:var(--sage-dark);font-size:12px;font-weight:800;letter-spacing:.12em}.section h2{margin:0;font-size:clamp(28px,5vw,42px);line-height:1.32;letter-spacing:-.04em}.lead{max-width:720px;margin:18px 0 0;color:var(--muted)}.note{margin:16px 0 0;color:var(--muted);font-size:12px}.label{display:inline-flex;align-items:center;gap:7px;padding:6px 10px;border:1px solid #c8c1b5;border-radius:999px;background:#fff;color:var(--sage-dark);font-size:12px;font-weight:700}.icon{width:20px;height:20px;stroke-width:1.8}.cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}.btn{min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border:1px solid var(--sage-dark);border-radius:10px;background:var(--sage-dark);color:#fff;font-weight:800;text-decoration:none;transition:.18s}.btn:hover{background:#405449;transform:translateY(-1px)}.btn:focus-visible,.text-link:focus-visible,.table-scroll:focus-visible{outline:3px solid #d4a98e;outline-offset:3px}.btn.subtle{background:#fff;color:var(--sage-dark)}.btn.subtle:hover{background:#f6f2ea}.text-link{display:inline-flex;min-height:44px;align-items:center;color:var(--sage-dark);font-weight:800;text-underline-offset:4px}
+    .topbar{padding:12px 0;border-bottom:1px solid var(--line);background:#fff}.topbar .wrap{display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:12px}.hero{padding:56px 0 48px;background:linear-gradient(90deg,#faf8f3 0 55%,#f0eadf 55%)}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}.hero h1{margin:14px 0 0;font-size:clamp(38px,6vw,68px);line-height:1.14;letter-spacing:-.055em}.hero h1 span{color:var(--peach)}.hero-copy>p{max-width:620px;margin:20px 0 0;color:#56605b}.hero-visual{position:relative}.hero-visual img{aspect-ratio:1.34/1;object-fit:cover;border-radius:16px}.hero-visual figcaption{margin-top:8px;color:var(--muted);font-size:11px}.strengths{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:28px;border:1px solid var(--line);background:var(--line);border-radius:12px;overflow:hidden}.strength{padding:14px;background:#fff}.strength .icon{color:var(--peach)}.strength b{display:block;margin-top:6px;font-size:13px}.strength small{color:var(--muted);font-size:11px}.disclosure{margin:18px 0 0;padding-left:12px;border-left:2px solid var(--sage);color:var(--muted);font-size:11px}
+    .verdict-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}.verdict{padding:22px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}.verdict.best{border:2px solid #b88a52;background:#fffaf1}.verdict .model{margin:10px 0 0;font-size:18px;font-weight:900}.verdict p{margin:8px 0 0;color:var(--muted);font-size:14px}.verdict .text-link{margin-top:10px;font-size:13px}
+    .story-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:42px;align-items:center;margin-top:28px}.story-grid figure{margin:0}.story-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;background:#efe9dd}.quote{margin:0;padding:24px;border-left:4px solid var(--peach);background:#fff;font-size:clamp(21px,3vw,30px);font-weight:800;line-height:1.5}.story-copy p{margin:18px 0 0;color:#4f5954}.fact-tag{display:inline-block;margin-top:18px;padding:7px 10px;border-radius:8px;background:#e9f0ec;color:var(--sage-dark);font-size:12px;font-weight:800}
+    .table-scroll{margin-top:28px;overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:#fff;-webkit-overflow-scrolling:touch}.compare{width:100%;min-width:820px;border-collapse:collapse;font-size:14px}.compare th,.compare td{padding:15px 14px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);vertical-align:top;text-align:left}.compare th{background:#ede9e0;font-size:13px}.compare th:first-child,.compare td:first-child{position:sticky;left:0;z-index:1;min-width:126px;background:#f7f4ed;font-weight:800}.compare th:first-child{z-index:2}.compare .winner{background:#fff9ed}.compare th.winner{border-top:3px solid #b88a52}.compare tr:last-child td{border-bottom:0}.compare th:last-child,.compare td:last-child{border-right:0}.compare small{display:block;color:var(--muted)}.shop-links{display:flex;flex-direction:column;align-items:flex-start;gap:4px}.shop-links a{min-height:38px;display:inline-flex;align-items:center;color:var(--sage-dark);font-size:12px;font-weight:800;text-underline-offset:3px}.scroll-hint{margin:8px 0 0;color:var(--muted);font-size:12px}
+    .reason-list{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.reason{padding:24px;border-top:3px solid var(--sage);background:#fff}.reason-head{display:flex;align-items:center;gap:10px}.reason h3{margin:0;font-size:19px}.reason p{margin:14px 0 0;color:var(--muted);font-size:14px}.subjective{margin-top:13px;padding:10px 12px;border-radius:8px;background:#f5f1e9;color:#58615c;font-size:12px}.subjective b{color:var(--peach)}
+    .growth{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:30px}.stage{position:relative;padding:22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}.stage+ .stage{border-left:1px solid var(--line)}.stage .icon{color:var(--sage)}.stage h3{margin:10px 0 0;font-size:17px}.stage p{margin:7px 0 0;color:var(--muted);font-size:13px}
+    .manual-auto{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}.vs-panel{padding:26px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}.vs-panel h3{display:flex;align-items:center;gap:10px;margin:0;font-size:22px}.vs-panel ul{margin:18px 0 0;padding-left:20px}.vs-panel li{margin:7px 0;color:#56605b}.balance{margin-top:18px;padding:16px 18px;border-radius:10px;background:#e9f0ec;color:#43544a;font-weight:800}
+    .real-list{max-width:780px;margin-top:28px;border-top:1px solid var(--line)}.real-item{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:22px 0;border-bottom:1px solid var(--line)}.real-item .icon{width:28px;height:28px;color:var(--peach)}.real-item h3{margin:0;font-size:18px}.real-item p{margin:6px 0 0;color:var(--muted);font-size:14px}
+    .fit-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:28px}.fit-card{padding:22px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}.fit-card h3{margin:0 0 12px;font-size:18px}.fit-card ul{margin:0;padding-left:20px;color:var(--muted)}.fit-card li{margin:6px 0}.fit-card.best{border-color:#b88a52;background:#fffaf1}
+    .final{background:#35443c;color:#fff}.final .eyebrow,.final .lead{color:#d8e3dc}.final .btn{background:#f2d7c8;border-color:#f2d7c8;color:#3c332f}.final .btn.subtle{background:transparent;border-color:#dce4df;color:#fff}.final .note{color:#c9d2cd}.safety{padding:20px;border:1px solid #d8cfc2;border-radius:10px;background:#fff}.safety h3{display:flex;align-items:center;gap:9px;margin:0;font-size:17px}.safety p{margin:8px 0 0;color:var(--muted);font-size:13px}.footer{padding:28px 0;background:#fff;color:var(--muted);font-size:11px}.footer .wrap{display:flex;justify-content:space-between;gap:20px}
+    @media(max-width:760px){body{font-size:16px}.wrap{width:min(100% - 32px,1040px)}.section{padding:48px 0}.hero{padding:42px 0 38px;background:#f7f3eb}.hero-grid,.story-grid{grid-template-columns:1fr;gap:26px}.hero h1{font-size:39px}.hero-visual img{aspect-ratio:16/10}.strengths{grid-template-columns:1fr}.strength{display:grid;grid-template-columns:24px 1fr;column-gap:10px;align-items:center}.strength b{margin:0}.strength small{grid-column:2}.verdict-grid,.reason-list,.growth,.manual-auto,.fit-grid{grid-template-columns:1fr}.growth{gap:8px}.stage,.stage+.stage{border:1px solid var(--line);border-radius:10px}.table-scroll{margin-left:-16px;margin-right:-16px;border-left:0;border-right:0;border-radius:0}.compare th,.compare td{padding:13px 12px}.footer .wrap{display:block}.footer span{display:block;margin-top:6px}.cta-row{display:grid;grid-template-columns:1fr}.btn{width:100%}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
   </style>
 </head>
 <body>
+  <header class="topbar"><div class="wrap"><span>育児の道具メモ｜実購入レビュー</span><span>使用2週間時点・2026年9月更新</span></div></header>
   <main>
-    <header class="pad">
-      <div class="meta"><span>育児の道具メモ</span><span>最終更新：2026年9月</span></div>
-      <div class="hero">
-        <p class="eyebrow">わが家のハイローチェア選びメモ</p>
-        <h1>ハイローチェア、<em>電動か手動かだけで選んでない？</em></h1>
-        <p class="lead">自分も最初は「電動にするか、手動にするか」ばかり見ていました。でも自宅で使い始めると、手動スイングでも泣き止ませや寝かしつけの助けになることに驚きました。だからこそ、<strong>軽さと移動のしやすさ、洗いやすさ、そして離乳食期までの使いやすさ</strong>を一緒に見て選んだポイントをまとめます。</p>
-        <p class="affiliate-disclosure">このページにはAmazonアソシエイトおよびYahoo!ショッピングアフィリエイトのリンクが含まれます。Amazonのアソシエイトとして、育児の道具メモは適格販売により収入を得ています。</p>
-        <p class="personal-note">※ 2週間使用時点の個人的な感想です。赤ちゃんによって合う・合わないがあります。</p>
-        <a class="action" href="#choice">まず、一番ラクにしたいことから見る ↓</a>
-      </div>
-    </header>
-
-    <section class="section pad" id="choice">
-      <p class="eyebrow">まず、優先順位を決める</p>
-      <h2>いま、一番助けがほしいのはどれ？</h2>
-      <p class="sub">ハイローチェアは、全部を満たす一台を探すより、<strong>自分の生活で一番困っていること</strong>から見ると選びやすくなります。このLPでは、最終的に「軽さと移動性のバランス」を重視しました。</p>
-      <div class="choices">
-        <button class="choice" data-k="electric">
-          <span class="scene"><img src="assets/soothe-flat.png" alt="リクライニングしたベビースイングで赤ちゃんをあやすイメージ"></span>
-          <span class="copy"><span class="heading"><span class="no">1</span><strong>泣き止ませ・寝かしつけを助けてほしい</strong></span><small><b>「電動でなくても、試す価値はある？」が一番気になる人へ</b>揺れ方だけでなく、音・電源・手動での操作まで見ます。</small></span><span class="arrow">寝かしつけ重視ならここを見る →</span>
-        </button>
-        <button class="choice" data-k="clean">
-          <span class="scene"><img src="assets/clean-flat.png" alt="トレーとシートを拭いて片付けるイメージ"></span>
-          <span class="copy"><span class="heading"><span class="no">2</span><strong>狭い家でも、無理なく動かしたい</strong></span><small><b>「キャスターがあれば十分？」が気になる人へ</b>方向転換だけでなく、持ち上げる場面を想像して重さまで見ます。</small></span><span class="arrow">移動のしやすさ重視ならここを見る →</span>
-        </button>
-        <button class="choice" data-k="space">
-          <span class="scene"><img src="assets/space-flat.png" alt="折りたたんだチェアをダイニング脇に置くイメージ"></span>
-          <span class="copy"><span class="heading"><span class="no">3</span><strong>離乳食期まで、使い続けられるか知りたい</strong></span><small><b>「今は寝かしつけ用。でも先も無駄にしたくない」人へ</b>洗いやすさ、高さ、リクライニング、クッションを確認します。</small></span><span class="arrow">長く使えるか確認する →</span>
-        </button>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="label"><i data-lucide="badge-check" class="icon"></i>実際に比較・購入・使用</span>
+          <h1>手動ハイローチェア3台を比較して、<span>わが家はネムリラ CR</span>を選びました。</h1>
+          <p>決め手は、静かな手動スイング、前輪キャスター、約8.8kgの軽さ。最軽量ではありませんが、寝かしつけと家の中での扱いやすさを両立しやすい一台でした。</p>
+          <div class="strengths" aria-label="ネムリラ CRの主な特徴">
+            <div class="strength"><i data-lucide="volume-1" class="icon"></i><b>静かなスイング</b><small>実際に使った感想</small></div>
+            <div class="strength"><i data-lucide="circle-dot" class="icon"></i><b>前輪キャスター</b><small>メーカー仕様</small></div>
+            <div class="strength"><i data-lucide="feather" class="icon"></i><b>約8.8kg</b><small>メーカー仕様</small></div>
+          </div>
+          <div class="cta-row"><a class="btn" href="#shops"><i data-lucide="external-link" class="icon"></i>価格・在庫を見る</a><a class="btn subtle" href="#comparison">3台の違いを見る</a></div>
+          <p class="disclosure">このページにはAmazonアソシエイトおよびYahoo!ショッピングアフィリエイトのリンクが含まれます。掲載リンクは今後アフィリエイトリンクへ差し替える場合があります。</p>
+        </div>
+        <figure class="hero-visual"><img src="assets/soothe-flat.png" width="1200" height="900" alt="ハイローチェアを手でやさしく揺らして赤ちゃんをあやすイメージ"><figcaption>※ イラストは使用シーンのイメージです。</figcaption></figure>
       </div>
     </section>
 
-    <section class="result pad empty" id="result">上の項目をひとつ選ぶと、商品ページで先に見るポイントが出ます。</section>
+    <section class="section section-white"><div class="wrap"><p class="eyebrow">まず結論</p><h2>優先したいこと別に見ると、選びやすい。</h2><p class="lead">3台すべてに良さがあります。わが家の条件ではCRでしたが、軽さや価格を最優先するなら別の答えも合理的です。</p><div class="verdict-grid">
+      <article class="verdict"><i data-lucide="feather" class="icon"></i><p class="model">コンビ ネムリラ Fit AQ</p><p><strong>軽さ最優先。</strong>約8.1kg。ほぼ同じ場所で使い、持ち上げやすさを重視する人に。</p><a class="text-link" href="https://www.combi.co.jp/store/chair/nemulilamt/g/g119494/" target="_blank" rel="noreferrer">商品詳細を見る →</a></article>
+      <article class="verdict best"><i data-lucide="badge-check" class="icon"></i><p class="model">コンビ ネムリラ CR</p><p><strong>軽さ＋移動性＋新生児期。</strong>約8.8kg、前輪キャスター、インナークッションのバランス型。</p><a class="text-link" href="#shops">販売先を見る →</a></article>
+      <article class="verdict"><i data-lucide="sliders-horizontal" class="icon"></i><p class="model">アップリカ ユラリズム</p><p><strong>価格・高さ調節優先。</strong>6段階の高さ調節や新生児マットを重視する人に。</p><a class="text-link" href="https://www.aprica.jp/products/highlow/detail/manual/yuralism/" target="_blank" rel="noreferrer">商品詳細を見る →</a></article>
+    </div></div></section>
 
-    <section class="section pad detail">
-      <p class="eyebrow">比べている途中で、気になったこと</p><h2>買ったあとに「ここ見ればよかった」を減らす6項目。</h2><p class="sub">商品ページでは似て見えても、実際に毎日使うと差が出そうなところを、先に確認しました。</p>
-      <div class="grid">
-        <article class="card"><span class="num">01</span><h3>電動って、本当に必要？</h3><p>揺れの有無だけでなく、電源の場所・音・手動時の扱いやすさまで確認。</p><div class="opinion">自分は「電動かどうか」より、電動を使わないときも扱いやすいかを重視しました。</div></article>
-        <article class="card"><span class="num">02</span><h3>家のテーブルと高さは合う？</h3><p>ダイニングテーブルに合うか、床で使うときに低すぎないかを寸法で見る。</p><div class="opinion">スペック表の高さより、いつものダイニングにちゃんと合うかの方が大事でした。</div></article>
-        <article class="card"><span class="num">03</span><h3>食べこぼしたら、どこまで洗える？</h3><p>シート、ベルト、テーブル周りをどこまで外せるか。説明書と写真を両方確認。</p><div class="opinion">赤ちゃん用品は汚れる前提なので、「拭ける」より「外して洗える」を見ました。</div></article>
-        <article class="card"><span class="num">04</span><h3>毎日動かすには重くない？</h3><p>重さだけでなく、キャスター、折りたたんだ厚み、片手で扱えるかを確認。</p><div class="opinion">方向転換だけでは足りず持ち上げる場面もあるので、数kgの差も毎日は効くと感じました。</div></article>
-        <article class="card"><span class="num">05</span><h3>離乳食が始まっても使いやすい？</h3><p>対象年齢・耐荷重に加え、食事用に切り替えた後の座りやすさを見る。</p><div class="opinion">「長く使える」より、次の一年で何に使うかで考えたい。</div></article>
-        <article class="card"><span class="num">06</span><h3>汚れ対策にカバーは使える？</h3><p>食事期に備えて買い足すなら、ずれ・洗濯・本体操作への影響を実使用で追記する。</p><div class="opinion">メーカー推奨ではないので、使うなら自分の環境での感想として残す。</div></article>
-      </div>
-    </section>
+    <section class="section section-soft"><div class="wrap"><p class="eyebrow">実際に買って、一番良かったこと</p><h2>一番感動したのは、スイングでした。</h2><div class="story-grid"><figure><img src="assets/soothe-flat.png" width="1200" height="900" alt="手動スイングで赤ちゃんをあやす様子のフラットイラスト"></figure><div class="story-copy"><blockquote class="quote">半信半疑で使い始めて、驚きました。2週間、使わない日はありません。</blockquote><p>出産直後に購入しましたが、里帰り中の実家では使わず、自宅アパートへ戻ってから利用開始。家事や在宅ワーク中にそばへ置く目的でしたが、今では<strong>寝かしつけとぐずり対策</strong>が中心です。</p><p>うちの子の場合、手動で揺らすと落ち着き、おしゃぶりと合わせるとそのまま眠ることも。CRのスイングは静かで、夜も音が気になりにくいと感じました。</p><span class="fact-tag">ここは実体験・赤ちゃんによって個人差があります</span></div></div></div></section>
 
-    <section class="section pad"><div class="safety"><p class="eyebrow" style="margin:0 0 8px">安全について</p><h2>安全に関する項目は、必ず公式情報で確認してください。</h2><p>対象年齢・使用方法・ベルト・安定性・SGマーク・リコール情報は、メーカーの説明書と公的情報で確認してください。消費者庁もハイチェアからの転落事故に注意を呼びかけています。 <a href="https://www.caa.go.jp/policies/policy/consumer_safety/child/project_001/mail/20200917/">消費者庁の注意喚起を見る</a></p></div></section>
-    <section class="section pad champion"><p class="eyebrow">わが家が最後に選んだ一台</p><div class="champion-grid"><div class="champion-copy"><h2>最後に選んだのは、<br>コンビ ネムリラ CRでした。</h2><p class="lead-review">最初は電動モデルも含めて見ていましたが、最終的には<strong>家の中で扱いやすいこと</strong>と<strong>離乳食が始まった後も使いやすそうなこと</strong>を優先しました。選んだのは、手動タイプのネムリラ CRです。</p><div class="product-facts"><span>手動スウィング</span><span>重量 8.8kg</span><span>5段階＋収納ポジション</span><span>新生児〜4才頃</span></div><p class="lead-review">最後まで迷ったモデルもありましたが、決め手になったのはスペック表では目立ちにくい違いでした。</p><ul class="review-points"><li><b>決め手 1</b>8.8kg。部屋の中で動かすことを考えたとき、重すぎないと感じました。</li><li><b>決め手 2</b>高さを5段階＋収納ポジションに調整できること。使う場所に合わせやすそうでした。</li><li><b>決め手 3</b>リバーシブルのシートクッションを丸ごと洗えること。離乳食が始まった後まで考えると安心でした。</li></ul><p class="lead-review">使い始めたばかりなので、揺れ方や洗濯のしやすさは実感が増えたら追記します。サイズ・現在の価格・在庫は、購入前に確認してください。</p><a class="review-cta" href="https://store.shopping.yahoo.co.jp/toysrus-babierus/10058581.html" target="_blank" rel="noreferrer">Yahoo!ショッピングでネムリラ CRを見る →<span>サイズ・現在の価格・在庫を確認できます</span></a></div><figure class="review-photo" aria-label="ネムリラ CRの実写レビュー写真を掲載する場所"></figure></div></section>
-    <section class="section pad future"><p class="eyebrow" style="margin-top:0">使い始めてからのメモ</p><h2>このページは、使いながら更新します。</h2><p class="sub">現在は、寝かしつけ・高さ・収納について記録中です。離乳食が始まったら、<strong>汚れ方・洗濯頻度・食事チェアとしての使いやすさ</strong>も追記します。非公式カバーも実際に購入したら、ずれ・洗いやすさ・操作への影響を追記予定です。</p></section>
-    <section class="section pad" style="background:#fff7f3;border-top:1px solid #f0cfc2;border-bottom:1px solid #f0cfc2"><p class="eyebrow" style="margin-top:0;color:#c7664c">使い始めて2週間の実感</p><h2>「そばに置けたら便利」くらいのつもりが、<br>予想以上にスイングに助けられました。</h2><p class="sub">出産直後に購入しましたが、里帰り中の実家では使いませんでした。自宅アパートに戻ってから半信半疑で使い始めたところ、想像以上。2週間経った今、使わない日はありません。</p><div class="grid reading-list" style="margin-top:30px"><article class="card"><span class="num">01</span><h3>家事用から、寝かしつけの主力へ</h3><p>最初の目的は、家事や在宅ワークのときにそばに置くことでした。今は泣き止ませや寝かしつけに使い、寝たらベッドへ移してから家事をする、という流れがわが家のルーティンになっています。</p></article><article class="card"><span class="num">02</span><h3>「なんでも試したい」日の助けになった</h3><p>抱っこしても落ち着かないとき、スイングに乗せると気分が切り替わることがありました。おしゃぶりと合わせると、うちの子はほぼ毎回静かになり、そのまま眠ってくれることも。泣き止まなくて困り、できることを増やしたい人には特におすすめしたいです。</p></article><article class="card"><span class="num">03</span><h3>静かなスイングと、簡単なリクライニング</h3><p>CRの手動スイングは静かで、夜間でも音が気になりませんでした。離乳食前なので椅子としてはまだ使っていませんが、リクライニングの操作は簡単でした。</p></article><article class="card"><span class="num">04</span><h3>これは全員に効く、とは言えない</h3><p>赤ちゃんの好みやその日の状態で、合う・合わないはあります。だからこそ「絶対に寝る道具」ではなく、困ったときに試せる選択肢が一つ増えるもの、と捉えるのが近いです。</p></article></div><p class="personal-note" style="max-width:760px;margin-top:22px">※ 赤ちゃんによって合う・合わないはあります。わが家では、寝かしつけやぐずりのときの助けになった、という2週間時点での個人的な感想です。寝たあとは安全な寝床へ移すようにしています。</p></section>
-    <section class="section pad detail"><p class="eyebrow">購入前に最後まで比べた3台</p><h2>軽さ・価格・使いやすさ。<br>優先したいことによって、答えは変わりました。</h2><p class="sub">候補を絞ったのは、コンビ ネムリラ CR、コンビ ネムリラ Fit AQ、アップリカ ユラリズムの3台です。わが家は「軽さだけでなく、家の中で動かしやすく、新生児期から食事期まで使いやすいか」を軸に比べました。</p><div class="compare-scroll" role="region" aria-label="ハイローチェア3台の比較表" tabindex="0"><table class="compare-table"><thead><tr><th>比べたこと</th><th class="is-winner">★ ネムリラ CR<br><small>わが家の本命</small></th><th>ネムリラ Fit AQ</th><th>アップリカ ユラリズム</th></tr></thead><tbody><tr><td>向いている人</td><td class="is-winner"><strong>軽さと移動性のバランスを取りたい人</strong></td><td>とにかく軽さを優先したい人</td><td>価格・高さ調節を優先したい人</td></tr><tr><td>重量</td><td class="is-winner"><strong>8.8kg</strong></td><td><strong>8.1kg（最軽量）</strong></td><td>10.6kg</td></tr><tr><td>移動</td><td class="is-winner">2輪キャスター。方向転換しやすい</td><td>キャスター機能なし</td><td>キャスターあり</td></tr><tr><td>新生児期</td><td class="is-winner">インナークッションあり</td><td>インナークッションなし</td><td>新生児マットあり</td></tr><tr><td>食事期まで</td><td class="is-winner">洗濯機対応シート・5段階高さ調節・ステップ連動リクライニング</td><td>洗濯機対応シート・5段階高さ調節・ステップ連動リクライニング</td><td>洗濯機対応・6段階高さ調節</td></tr><tr><td>商品を確認</td><td class="is-winner"><a data-product="nemulila-cr-yahoo" href="https://store.shopping.yahoo.co.jp/toysrus-babierus/10058581.html" target="_blank" rel="noreferrer">Yahoo!ショッピングで見る →</a><br><a data-product="nemulila-cr-rakuten" href="https://item.rakuten.co.jp/toysrus/10058581/" target="_blank" rel="noreferrer">楽天市場で見る →</a></td><td><a data-product="nemulila-fit-aq" href="https://www.combi.co.jp/store/chair/nemulilamt/g/g119494/" target="_blank" rel="noreferrer">商品詳細を見る →</a></td><td><a data-product="yuralism" href="https://www.aprica.jp/products/highlow/detail/manual/yuralism/" target="_blank" rel="noreferrer">商品詳細を見る →</a></td></tr></tbody></table></div><p class="scroll-note">横にスクロールして比べられます。各リンクは後からアフィリエイトリンクへ差し替え可能です。</p><p class="personal-note">※ 重量・仕様は確認日（2026年9月7日）時点の各社情報をもとにした比較メモです。販売モデルによって仕様が異なることがあるため、購入前には必ず商品ページと説明書を確認してください。</p></section>
-    <section class="section pad champion" style="background:#edf6f4"><p class="eyebrow">比較して、CRに決めた理由</p><div class="winner-mark" aria-label="今回の比較での本命"><span class="crown" aria-hidden="true">♛</span>今回の比較で、わが家の本命</div><h2>軽さだけではなく、<br>毎日の「扱いやすさ」を取りたかった。</h2><div class="grid"><article class="card winner-card"><span class="num">★</span><h3>コンビ ネムリラ CR</h3><p><strong>8.8kg・2輪キャスター・インナークッションあり。</strong>軽さ、キャスター、洗いやすさのバランスを取りたいわが家には、これがいちばん合いました。</p><div class="opinion">「最軽量」だけでなく、移動・新生児期・食事期までを一緒に考えた結果です。</div></article><article class="card"><span class="num">01</span><h3>Fit AQより700g重いだけで、キャスターが付く</h3><p>Fit AQの8.1kgは魅力的でした。ただCRは8.8kgを保ちながら、前輪の2輪キャスターで方向転換しやすい仕様。家の中で場所を変えることを考えると、この差に納得しました。</p></article><article class="card"><span class="num">02</span><h3>新生児期のインナークッションがある</h3><p>CRはインナークッションとリバーシブルシートの構成。Fit AQにはインナークッションがないため、新生児期からの使い方まで考えるとCRのほうが安心感がありました。</p></article><article class="card"><span class="num">03</span><h3>リクライニングとステップが連動する</h3><p>CRは5段階のリクライニングに合わせてステップも連動する仕様。角度を変えるたびに足元を別々に調整する必要がなく、赤ちゃんの姿勢を考えるうえでも地味にうれしいポイントでした。</p></article><article class="card"><span class="num">04</span><h3>約29,000円なら、価格差にも納得できた</h3><p>確認時点ではトイザらス・ベビーザらス限定CRが28,999円。Fit AQの公式価格30,000円と大きく変わらないなら、キャスターとインナークッションがあるCRを選びたいと思いました。</p></article></div><p class="personal-note">私はAmazonのらくベビーを使って購入できたらと思いAmazonでも探しましたが、購入時点ではネムリラ CRの取り扱いを見つけられず、Yahoo!ショッピングで購入しました。Yahoo!ショッピングや楽天市場など、販売先ごとの価格とポイント還元を比べて、いちばん納得できるところで選ぶのがおすすめです。参考価格の目安：CR 約28,999〜30,800円、Fit AQ 約25,080円〜、ユラリズム 約20,255円〜（2026年9月7日確認時点）。価格・在庫・限定カラーは変動します。</p></section>
-    <section class="section pad" id="movement-notes" style="background:#fff;border-top:1px solid #c9d0cf"><p class="eyebrow">使ってみて分かった、移動のこと</p><h2>キャスターがあっても、<br>狭い場所ですいすい動かせるわけではありません。</h2><p class="sub">これは短所として先に知っておきたかった点です。私が比較した範囲では、4輪すべてが自由に動くキャスターの候補は見つかりませんでした。安全性を考えた設計なのだと思いますが、2輪キャスターでも動かしづらい場面はあります。</p><div class="grid reading-list"><article class="card"><span class="num">01</span><h3>小回りが必要な場所では、持ち上げることもある</h3><p>家具のすき間や狭い通路では、方向転換だけでは足りず、結局少し持ち上げて運ぶことがありました。これはCRだけの欠点というより、候補にしたチェアに共通していた現実です。</p></article><article class="card"><span class="num">02</span><h3>だから「ちょっとでも軽い」が毎日生きる</h3><p>持ち上げる場面があるなら、軽さはカタログ上の数字では終わりません。ユラリズムの10.6kgよりCRの8.8kg、さらに軽さ最優先ならFit AQの8.1kg。この差を、部屋の動線に重ねて考えるのがおすすめです。</p><div class="opinion">キャスターの有無だけで決めず、「自分が持ち上げる距離」を想像すると選びやすくなりました。</div></article></div><p class="personal-note">※ キャスターの構成・動かしやすさは販売モデルや床の素材でも変わります。購入前に商品ページ、説明書、実物の展示で確認してください。</p></section>
-    <section class="section pad purchase" id="purchase"><p class="eyebrow">ここまで読んで、CRが合いそうなら</p><h2>価格とポイント還元を確認してから、<br>候補に残すか決める。</h2><p class="sub">「とにかく最軽量」ならFit AQ、「価格優先」ならユラリズムも有力です。それでも<strong>軽さ・移動・新生児期のクッション・食事期までの使いやすさ</strong>をまとめて重視するなら、ネムリラ CRは納得しやすい選択でした。</p><a class="review-cta" href="https://store.shopping.yahoo.co.jp/toysrus-babierus/10058581.html" target="_blank" rel="noreferrer">ネムリラ CRの価格・在庫を確認する →<span>Yahoo!ショッピングや楽天市場などで、ポイント還元も含めて比べるのがおすすめです</span></a><p class="personal-note">※ 価格・在庫・仕様・ポイント還元は変動します。安全に関する確認は、必ずメーカー公式の説明書・商品情報で行ってください。</p></section>
-    <footer class="footer">掲載する製品情報・価格・安全情報は、各メーカーの公式情報と説明書を確認したうえで更新します。</footer>
+    <section class="section section-white" id="comparison"><div class="wrap"><p class="eyebrow">ネムリラ CR・Fit AQ・ユラリズムの違い</p><h2>購入前に比べた3台。</h2><p class="lead">公表仕様と、実際に選ぶときの判断を分けて整理しました。CR列はわが家の購入品として薄く強調しています。</p><div class="table-scroll" role="region" aria-label="手動ハイローチェア3台の比較表" tabindex="0"><table class="compare"><thead><tr><th>比較項目</th><th class="winner">ネムリラ CR<br><small>わが家の購入品</small></th><th>ネムリラ Fit AQ</th><th>ユラリズム</th></tr></thead><tbody>
+      <tr><td>スイング</td><td class="winner"><strong>手動</strong><small>使用感：静かで寝かしつけに便利</small></td><td>手動</td><td>手動</td></tr>
+      <tr><td>重量</td><td class="winner"><strong>約8.8kg</strong></td><td><strong>約8.1kg</strong></td><td>約10.6kg</td></tr>
+      <tr><td>キャスター</td><td class="winner"><strong>前輪キャスター</strong><small>使用感：Fit AQより方向転換しやすい</small></td><td>キャスター機能なし</td><td>キャスターあり</td></tr>
+      <tr><td>新生児用</td><td class="winner">インナークッションあり</td><td>インナークッションなし</td><td>新生児マットあり</td></tr>
+      <tr><td>洗濯</td><td class="winner">シートは洗濯機対応</td><td>シートは洗濯機対応</td><td>シート等は洗濯機対応</td></tr>
+      <tr><td>高さ調節</td><td class="winner">5段階＋収納</td><td>5段階＋収納</td><td><strong>6段階</strong></td></tr>
+      <tr><td>リクライニング</td><td class="winner">5段階・ステップ連動</td><td>5段階・ステップ連動</td><td>5段階</td></tr>
+      <tr><td>使用期間</td><td class="winner">新生児～4歳頃・18kg以下</td><td>新生児～4歳頃・18kg以下</td><td>新生児～4歳頃・18kg以下</td></tr>
+      <tr><td>横幅</td><td class="winner">520mm</td><td>520mm</td><td>545mm</td></tr>
+      <tr><td>価格目安</td><td class="winner">約29,000円～<small>価格は変動します</small></td><td>約25,000円～<small>価格は変動します</small></td><td>約20,000円～<small>価格は変動します</small></td></tr>
+      <tr><td>商品リンク</td><td class="winner"><div class="shop-links"><a href="https://store.shopping.yahoo.co.jp/toysrus-babierus/10058581.html" target="_blank" rel="noreferrer">Yahoo!で見る →</a><a href="https://item.rakuten.co.jp/toysrus/10058581/" target="_blank" rel="noreferrer">楽天市場で見る →</a></div></td><td><a class="text-link" href="https://www.combi.co.jp/store/chair/nemulilamt/g/g119494/" target="_blank" rel="noreferrer">商品詳細を見る →</a></td><td><a class="text-link" href="https://www.aprica.jp/products/highlow/detail/manual/yuralism/" target="_blank" rel="noreferrer">商品詳細を見る →</a></td></tr>
+    </tbody></table></div><p class="scroll-hint">スマホでは横へスクロールして比較できます。仕様・価格は2026年9月7日の確認内容をもとにしています。販売モデルにより異なる場合があります。</p><div class="cta-row"><a class="btn" href="#shops">CRの販売先を比較する</a></div></div></section>
+
+    <section class="section section-soft"><div class="wrap"><p class="eyebrow">CRを選んだ3つの理由</p><h2>寝かしつけと、毎日の扱いやすさのバランス。</h2><div class="reason-list">
+      <article class="reason"><div class="reason-head"><i data-lucide="volume-1" class="icon"></i><h3>静かな手動スイング</h3></div><p>手動でも、うちの子の寝かしつけにはかなり便利でした。一定時間は手で揺らす必要がありますが、動作音は静かに感じました。</p><div class="subjective"><b>実体験：</b>一番感動した機能。使わない日がないほど活躍しています。</div></article>
+      <article class="reason"><div class="reason-head"><i data-lucide="circle-dot" class="icon"></i><h3>前輪キャスター</h3></div><p>本音では4輪すべてが自在に動く仕様が理想でしたが、比較した候補には該当なし。その中では、キャスター機能のないFit AQよりCRのほうが方向転換しやすいと感じました。</p><div class="subjective"><b>注意：</b>4輪自在キャスターがない理由については、メーカーへ確認していません。</div></article>
+      <article class="reason"><div class="reason-head"><i data-lucide="feather" class="icon"></i><h3>約8.8kgの軽さ</h3></div><p>ユラリズムの約10.6kgより軽量。段差や狭い場所では本体を持ち上げる場面があるため、重量差は実生活で効きました。</p><div class="subjective"><b>比較：</b>Fit AQはさらに軽い一方、前輪キャスターはありません。</div></article>
+    </div></div></section>
+
+    <section class="section section-white"><div class="wrap"><p class="eyebrow">新生児期から食事期まで</p><h2>今の使いやすさと、次の使い道を一緒に見る。</h2><p class="lead">まだ離乳食前なので、食事チェアとしての使用感は未評価です。ここはメーカー仕様と購入前に確認したポイントです。</p><div class="growth"><article class="stage"><i data-lucide="baby" class="icon"></i><h3>新生児期</h3><p>インナークッションがあり、小さい時期の体を包みやすい構成。</p></article><article class="stage"><i data-lucide="washing-machine" class="icon"></i><h3>汚れたとき</h3><p>クッションやシートを外して洗いやすいかは、日常の負担を左右します。</p></article><article class="stage"><i data-lucide="utensils" class="icon"></i><h3>離乳食期</h3><p>成長後はクッションを外し、高さを合わせてチェアとして使える仕様。</p></article></div></div></section>
+
+    <section class="section section-soft"><div class="wrap"><p class="eyebrow">手動と電動、どちらが合う？</p><h2>快適さなら電動。価格と軽さなら手動。</h2><div class="manual-auto"><article class="vs-panel"><h3><i data-lucide="move-horizontal" class="icon"></i>手動CR</h3><ul><li>価格を抑えやすい</li><li>電動モデルより軽量になりやすい</li><li>電源が不要</li><li><strong>寝るまで自分で揺らす必要がある</strong></li></ul></article><article class="vs-panel"><h3><i data-lucide="power" class="icon"></i>電動モデル</h3><ul><li>自動で一定の強さで揺らせる</li><li>強さ調整や音楽機能があるモデルもある</li><li>近くで家事をしながら見守りやすい</li><li><strong>価格が高く、本体が重い傾向</strong></li></ul></article></div><p class="balance">予算に余裕があり、寝かしつけ中に手を離したいなら電動は合理的。わが家はコスパを重視し、「手動スイング＋前輪キャスター」のCRが合いました。</p></div></section>
+
+    <section class="section section-white"><div class="wrap"><p class="eyebrow">実際に使って分かったこと</p><h2>便利だったことも、惜しかったことも。</h2><div class="real-list">
+      <article class="real-item"><i data-lucide="moon-star" class="icon"></i><div><h3>寝かしつけの選択肢が増えた</h3><p>抱っこで落ち着かないとき、スイングを試せるだけで気持ちが少しラクになりました。寝たあとは安全な寝床へ移しています。</p></div></article>
+      <article class="real-item"><i data-lucide="move" class="icon"></i><div><h3>リビングからキッチン方向へ動かしやすい</h3><p>前輪キャスターがあるため、Fit AQより方向転換しやすいのはCRの明確な利点でした。</p></div></article>
+      <article class="real-item"><i data-lucide="move-up" class="icon"></i><div><h3>段差や狭い場所では持ち上げる</h3><p>キャスターがあっても万能ではありません。小回りが必要な場所では持ち上げるため、少しでも軽いことが助かります。</p></div></article>
+      <article class="real-item"><i data-lucide="washing-machine" class="icon"></i><div><h3>洗える構成は今後も重要</h3><p>離乳食前なので汚れ方は未評価ですが、クッションやシートを外せる構成は、食事期を考えると安心材料でした。</p></div></article>
+    </div></div></section>
+
+    <section class="section section-soft"><div class="wrap"><p class="eyebrow">どのモデルが向いている？</p><h2>生活条件に合わせて選ぶ。</h2><div class="fit-grid"><article class="fit-card best"><h3>ネムリラ CRがおすすめ</h3><ul><li>電動までは不要だがスイングを使いたい</li><li>家の中で方向転換・移動する</li><li>重すぎるモデルを避けたい</li><li>新生児期から食事期まで使いたい</li></ul></article><article class="fit-card"><h3>Fit AQ向き</h3><ul><li>3台の中で最軽量を優先したい</li><li>ほぼ同じ場所で使う</li><li>キャスターやインナークッションが不要</li></ul></article><article class="fit-card"><h3>ユラリズム向き</h3><ul><li>価格を優先したい</li><li>高さ調節の細かさを重視する</li><li>約10.6kgの重さが許容できる</li></ul></article><article class="fit-card"><h3>電動モデル向き</h3><ul><li>寝かしつけ中に手を離したい</li><li>予算に余裕がある</li><li>重さより快適性を優先する</li></ul></article></div></div></section>
+
+    <section class="section section-white"><div class="wrap"><div class="safety"><h3><i data-lucide="shield-check" class="icon"></i>安全に関する確認</h3><p>ハイローチェアを長時間睡眠用ベッドとして案内するものではありません。対象月齢、ベルト、スイング時の荷重制限、使用時間、リコール情報は、購入前にメーカー公式の商品情報・取扱説明書で確認してください。</p></div></div></section>
+
+    <section class="section final" id="shops"><div class="wrap"><p class="eyebrow">わが家の最終結論</p><h2>条件が合う人には、CRがいちばんバランスを取りやすい。</h2><p class="lead">わが家はCRを選んでよかったと感じています。ただし、軽さだけならFit AQ、価格ならユラリズム、手離れなら電動。自分が一番ラクにしたいことから選ぶのが、失敗しにくいと思います。</p><div class="cta-row"><a class="btn" href="https://store.shopping.yahoo.co.jp/toysrus-babierus/10058581.html" target="_blank" rel="noreferrer"><i data-lucide="external-link" class="icon"></i>Yahoo!で価格・在庫を見る</a><a class="btn subtle" href="https://item.rakuten.co.jp/toysrus/10058581/" target="_blank" rel="noreferrer">楽天市場で価格・カラーを見る</a></div><p class="note">私はAmazonのらくベビーを使って購入したいと思いAmazonでも探しましたが、購入時点ではCRの取り扱いを見つけられず、Yahoo!ショッピングで購入しました。Yahoo!・楽天などで、本体価格とポイント還元を合わせて比べるのがおすすめです。価格・在庫・ポイント還元は変動します。</p></div></section>
   </main>
-
-  <script>
-    const guide={
-      electric:{title:'電動だけが、泣き止ませの答えではなかった。',body:'わが家では手動スイングでも助けになりました。電源や音だけでなく、手動で揺らすときの静かさと操作のしやすさも確認ポイントです。',checks:['電源が必要か','スイング時の音','手動での操作感'],image:'assets/soothe-flat.png',alt:'リクライニングしたベビースイングで赤ちゃんをあやすイメージ',picks:[{name:'ネムリラ CRを見る',note:'わが家が選んだ手動スイングモデル',url:'https://store.shopping.yahoo.co.jp/toysrus-babierus/10058581.html'},{name:'ユラリズムを見る',note:'手動スイングモデルの公式情報',url:'https://www.aprica.jp/products/highlow/detail/manual/yuralism/'}]},
-      clean:{title:'キャスターだけではなく、持ち上げる重さも見る。',body:'狭い場所では、方向転換だけでは足りず、少し持ち上げることがあります。動線を思い浮かべながら、重さとキャスターをセットで比べるのがおすすめです。',checks:['本体重量','キャスターの位置','通路・家具のすき間'],image:'assets/space-flat.png',alt:'折りたたんだチェアをダイニング脇に置くイメージ',picks:[{name:'ネムリラ CRを見る',note:'8.8kg・2輪キャスター',url:'https://store.shopping.yahoo.co.jp/toysrus-babierus/10058581.html'},{name:'ネムリラ Fit AQを見る',note:'8.1kg・軽さを優先したい場合',url:'https://www.combi.co.jp/store/chair/nemulilamt/g/g119494/'}]},
-      space:{title:'今の寝かしつけと、次の離乳食期を一緒に見る。',body:'離乳食前なら、食事チェアとしての実感はまだ分かりません。だからこそ、リクライニング、高さ、シートの洗いやすさを購入前に確認しておくと安心です。',checks:['リクライニング操作','シートの洗い方','高さとテーブルの相性'],image:'assets/clean-flat.png',alt:'トレーとシートを拭いて片付けるイメージ',picks:[{name:'ネムリラ CRを見る',note:'クッション・高さ・リクライニングを確認',url:'https://store.shopping.yahoo.co.jp/toysrus-babierus/10058581.html'},{name:'ネムリラ Fit AQを見る',note:'仕様を公式情報で確認',url:'https://www.combi.co.jp/store/chair/nemulilamt/g/g119494/'}]}
-    };
-    const output=document.querySelector('#result');
-    document.querySelectorAll('.choice').forEach(button=>{
-      button.addEventListener('click',()=>{
-        document.querySelectorAll('.choice').forEach(item=>item.classList.remove('active'));
-        button.classList.add('active');
-        const item=guide[button.dataset.k];
-        output.className='result pad';
-        output.innerHTML=`<div class="result-layout"><div><p class="eyebrow">まず確認すること</p><h2>${item.title}</h2><p>${item.body}</p><ul class="chips">${item.checks.map(check=>`<li>${check}</li>`).join('')}</ul><div class="candidates">${item.picks.map(pick=>`<a class="candidate" href="${pick.url}" target="_blank" rel="noreferrer"><b>${pick.name}</b><span>${pick.note}</span><i>商品ページを見る →</i></a>`).join('')}</div><button class="reset">ほかの使い方で見直す</button></div><figure class="result-visual"><img src="${item.image}" alt="${item.alt}"></figure></div>`;
-        output.querySelector('.reset').addEventListener('click',()=>{
-          output.className='result pad empty';
-          output.textContent='上の項目をひとつ選ぶと、商品ページで先に見るポイントが出ます。';
-          document.querySelector('#choice').scrollIntoView({behavior:'smooth'});
-        });
-        output.scrollIntoView({behavior:'smooth',block:'center'});
-      });
-    });
-    // 読む人が迷いを解きほぐせる順番に整理し、古い重複セクションは表示しない。
-    const sections=Array.from(document.querySelectorAll('section'));
-    const findSection=(text)=>sections.find(section=>section.textContent.includes(text));
-    const safetySection=document.querySelector('.safety')?.closest('section');
-    const oldChampion=findSection('わが家が最後に選んだ一台');
-    const obsoleteFuture=findSection('このページは、使いながら更新します。');
-    const comparison=findSection('購入前に最後まで比べた3台');
-    const decision=findSection('比較して、CRに決めた理由');
-    const movement=document.querySelector('#movement-notes');
-    const experience=findSection('使い始めて2週間の実感');
-    const purchase=document.querySelector('#purchase');
-    oldChampion?.remove();
-    obsoleteFuture?.remove();
-    if(safetySection&&comparison&&decision&&movement&&experience&&purchase){safetySection.after(experience,comparison,decision,movement,purchase);}
-  </script>
+  <footer class="footer"><div class="wrap"><span>育児の道具メモ｜2週間使用時点の個人的なレビュー</span><span>商品仕様は必ずメーカー公式情報をご確認ください。</span></div></footer>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script>if(window.lucide){window.lucide.createIcons();}</script>
 </body>
 </html>
