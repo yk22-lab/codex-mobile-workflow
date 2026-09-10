@@ -52,7 +52,13 @@ test("keeps the root route bound to the standalone latest LP", async () => {
   assert.match(staticPage, /価格とポイント還元/);
   assert.match(staticPage, /Amazonのらくベビーを使って購入したい/);
   assert.match(staticPage, /条件が合う人には、CRがいちばんバランス/);
-  assert.match(staticPage, /2週間、使わない日はありません/);
+  assert.match(staticPage, /自宅へ戻ってから日常的に使い続けています/);
+  assert.match(staticPage, /このレビューの使用条件/);
+  assert.match(staticPage, /購入前に知っておきたい短所/);
+  assert.match(staticPage, /0歳児を育てる父親/);
+  assert.match(staticPage, /ネムリラ CR公式/);
+  assert.match(staticPage, /購入価格は変わりません/);
+  assert.doesNotMatch(staticPage, /2週間/);
   assert.match(staticPage, /寝かしつけとぐずり対策/);
   assert.match(staticPage, /商品詳細を見る/);
   assert.match(staticPage, /assets\/owner-photos\/nemulila-cr-hero-privacy\.webp/);
