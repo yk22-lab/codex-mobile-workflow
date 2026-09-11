@@ -50,7 +50,7 @@ test("keeps the root route bound to the standalone latest LP", async () => {
   assert.match(staticPage, /class="btn yahoo"/);
   assert.match(staticPage, /class="btn rakuten"/);
   assert.match(staticPage, /\.btn\.rakuten\{[^}]*background:#c92f65[^}]*color:#fff/);
-  assert.match(staticPage, /\.final\{[^}]*background:#f3e1d3[^}]*color:var\(--ink\)/);
+  assert.match(staticPage, /\.final\{[^}]*background:linear-gradient\(135deg,#382a25 0%,#4b2d32 100%\)[^}]*color:#fff/);
   assert.match(staticPage, /\.btn\.amazon\{/);
   assert.match(staticPage, /data-lucide="external-link" class="icon" aria-hidden="true"/);
   assert.match(staticPage, /https:\/\/amzn\.to\/4A9SMyM/);
