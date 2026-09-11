@@ -47,6 +47,8 @@ test("keeps the root route bound to the standalone latest LP", async () => {
   assert.match(staticPage, /class="compare"/);
   assert.match(staticPage, /楽天市場で見る/);
   assert.match(staticPage, /hb\.afl\.rakuten\.co\.jp\/ichiba\/5770ca68/);
+  assert.match(staticPage, /class="btn yahoo"/);
+  assert.match(staticPage, /class="btn rakuten"/);
   assert.doesNotMatch(staticPage, /href="https:\/\/item\.rakuten\.co\.jp\/toysrus\/10058581/);
   assert.match(staticPage, /ネムリラ Fit AQ/);
   assert.match(staticPage, /5段階・ステップ連動/);
