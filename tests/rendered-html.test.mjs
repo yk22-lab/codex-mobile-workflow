@@ -52,6 +52,12 @@ test("keeps the root route bound to the standalone latest LP", async () => {
   assert.match(staticPage, /\.btn\.rakuten\{[^}]*background:#ec407a/);
   assert.match(staticPage, /\.btn\.amazon\{/);
   assert.match(staticPage, /data-lucide="external-link" class="icon" aria-hidden="true"/);
+  assert.match(staticPage, /https:\/\/amzn\.to\/4A9SMyM/);
+  assert.match(staticPage, /https:\/\/amzn\.to\/4xEJV5T/);
+  assert.match(staticPage, /5770fefc\.dd9b7f9d/);
+  assert.match(staticPage, /57710043\.6021e749/);
+  assert.match(staticPage, /ユラリズム スマート プレミアム公式/);
+  assert.match(staticPage, /ウイズ ラブ ベージュ（品番：2109080）/);
   assert.doesNotMatch(staticPage, /href="https:\/\/item\.rakuten\.co\.jp\/toysrus\/10058581/);
   assert.match(staticPage, /ネムリラ Fit AQ/);
   assert.match(staticPage, /5段階・ステップ連動/);
@@ -68,7 +74,7 @@ test("keeps the root route bound to the standalone latest LP", async () => {
   assert.match(staticPage, /購入価格は変わりません/);
   assert.doesNotMatch(staticPage, /2週間/);
   assert.match(staticPage, /寝かしつけとぐずり対策/);
-  assert.match(staticPage, /商品詳細を見る/);
+  assert.match(staticPage, /Amazonで価格を見る/);
   assert.match(staticPage, /assets\/owner-photos\/nemulila-cr-hero-privacy\.webp/);
   assert.match(staticPage, /購入者が撮影したネムリラ CRの写真/);
   assert.match(staticPage, /og\.png/);
