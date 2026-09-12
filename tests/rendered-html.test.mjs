@@ -76,11 +76,11 @@ test("keeps the root route bound to the standalone latest LP", async () => {
   assert.doesNotMatch(staticPage, /2週間/);
   assert.match(staticPage, /寝かしつけとぐずり対策/);
   assert.match(staticPage, /Amazonで価格を見る/);
-  assert.match(staticPage, /assets\/owner-photos\/nemulila-cr-hero-privacy\.webp/);
+  assert.match(staticPage, /assets\/owner-photos\/nemulila-cr-hero-privacy-gallery\.webp/);
   assert.match(staticPage, /assets\/owner-photos\/nemulila-cr-everyday-position-refined-v3\.webp/);
-  assert.match(staticPage, /assets\/owner-photos\/nemulila-cr-recline-lever-back\.webp/);
-  assert.match(staticPage, /assets\/owner-photos\/nemulila-cr-rear-wheel\.webp/);
-  assert.match(staticPage, /assets\/owner-photos\/nemulila-cr-front-seat-refined\.webp/);
+  assert.match(staticPage, /assets\/owner-photos\/nemulila-cr-recline-lever-back-gallery\.webp/);
+  assert.match(staticPage, /assets\/owner-photos\/nemulila-cr-rear-wheel-gallery\.webp/);
+  assert.match(staticPage, /assets\/owner-photos\/nemulila-cr-front-seat-refined-gallery\.webp/);
   assert.match(staticPage, /側面にあるのは高さ調節ボタン/);
   assert.match(staticPage, /リクライニングレバーは背面中央/);
   assert.doesNotMatch(staticPage, /リクライニングは側面から/);
