@@ -77,6 +77,9 @@ test("keeps the root route bound to the standalone latest LP", async () => {
   assert.match(staticPage, /寝かしつけとぐずり対策/);
   assert.match(staticPage, /Amazonで価格を見る/);
   assert.match(staticPage, /assets\/owner-photos\/nemulila-cr-hero-privacy\.webp/);
+  assert.match(staticPage, /class="final-grid"/);
+  assert.match(staticPage, /class="final-photo"/);
+  assert.match(staticPage, /わが家で実際に使っているネムリラ CR/);
   assert.match(staticPage, /購入者が撮影したネムリラ CRの写真/);
   assert.match(staticPage, /og\.png/);
   assert.doesNotMatch(page, /SkeletonPreview|codex-preview/);
