@@ -84,6 +84,7 @@ test("keeps the root route bound to the standalone latest LP", async () => {
   assert.match(staticPage, /側面にあるのは高さ調節ボタン/);
   assert.match(staticPage, /リクライニングレバーは背面中央/);
   assert.doesNotMatch(staticPage, /リクライニングは側面から/);
+  assert.doesNotMatch(staticPage, /4輪自在キャスターがない理由については、メーカーへ確認していません/);
   assert.match(staticPage, /class="final-grid"/);
   assert.match(staticPage, /class="final-photo"/);
   assert.match(staticPage, /わが家で実際に使っているネムリラ CR/);
