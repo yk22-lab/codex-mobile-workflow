@@ -77,7 +77,7 @@ test("keeps the root route bound to the standalone latest LP", async () => {
   assert.match(staticPage, /寝かしつけとぐずり対策/);
   assert.match(staticPage, /Amazonで価格を見る/);
   assert.match(staticPage, /assets\/owner-photos\/nemulila-cr-hero-privacy\.webp/);
-  assert.match(staticPage, /assets\/owner-photos\/nemulila-cr-everyday-position\.webp/);
+  assert.match(staticPage, /assets\/owner-photos\/nemulila-cr-everyday-position-refined-v2\.webp/);
   assert.match(staticPage, /assets\/owner-photos\/nemulila-cr-recline-lever-back\.webp/);
   assert.match(staticPage, /側面のレバーは高さ調節用/);
   assert.match(staticPage, /リクライニングレバーは背面中央/);
