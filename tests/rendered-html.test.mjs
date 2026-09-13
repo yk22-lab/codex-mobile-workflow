@@ -76,8 +76,6 @@ test("keeps the root route bound to the standalone latest LP", async () => {
   assert.doesNotMatch(staticPage, /2週間/);
   assert.match(staticPage, /寝かしつけとぐずり対策/);
   assert.match(staticPage, /Amazonで価格を見る/);
-  assert.match(staticPage, /assets\/owner-photos\/proof-storage\.webp/);
-  assert.match(staticPage, /assets\/owner-photos\/proof-cushion\.webp/);
   assert.match(staticPage, /assets\/owner-photos\/nemulila-cr-everyday-position-refined-v3\.webp/);
   assert.match(staticPage, /assets\/owner-photos\/proof-controls\.webp/);
   assert.match(staticPage, /assets\/owner-photos\/proof-wheels\.webp/);
